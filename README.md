@@ -4,7 +4,7 @@ All SQL coding projects and case studies
 
 CASE STUDY #1. Danny's Diner 
 
-![alt text](dannysdinner.png "Entity Relationship")
+![alt text](dannysdinner.png "Entity Relationship"| width=100)
 
 __PROBLEM STATEMENT__
 
