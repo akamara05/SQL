@@ -1,4 +1,4 @@
--- CASE STUUDY #1 - Danny's Diner 
+-- CASE STUDY #1 - Danny's Diner 
 
 -- Creating the table 
 CREATE SCHEMA dannys_diner;
@@ -80,9 +80,9 @@ ON s.product_id = m.product_id
 GROUP BY 1
 ORDER BY 2 DESC;
 
--- Customer A spent the most, at an amount of $76
--- Customer B spent $74 
--- Customer C spent less than half of customer A and B spent, spending $36
+-- Customer A spent the most, an amount of $76.
+-- Customer B spent $74.
+-- Customer C spent less than half of what customer A and B spent, spending $36.
        
 -- 2. How many days has each customer visited the restaurant?
 SELECT customer_id,
@@ -92,7 +92,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 -- Customer A visted the store 4 times. 
 -- Customer B visited the store the most, a total of 6 visits. 
--- Customer C visted the store the least, a total of 2 visits
+-- Customer C visted the store the least, a total of 2 visits.
 
 -- 3. What was the first item from the menu purchased by each customer?
 WITH purchasing_ranking AS
@@ -109,8 +109,8 @@ SELECT customer_id,
 FROM purchasing_ranking 
 WHERE purchase_order = 1;
 -- Customer A purchased sushi and curry the first time they ordered.
--- Customer B purchased curry the first time they ordered
--- Customer C purchased ramen the first time they ordered
+-- Customer B purchased curry the first time they ordered.
+-- Customer C purchased ramen the first time they ordered.
 
 -- 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 SELECT m.product_name,
@@ -120,7 +120,7 @@ LEFT JOIN dannys_diner.menu AS m
 ON s.product_id = m.product_id 
 GROUP BY 1
 ORDER BY 2 DESC;
--- The most purchaed menu item is ramen. It was puchased a total of 8 times by all customers. 
+-- The most purchased menu item is ramen. It was puchased a total of 8 times by all customers. 
 
 SELECT s.customer_id, 
        m.product_name,
@@ -152,14 +152,14 @@ SELECT customer_id,
 FROM cte
 WHERE ranking = 1
 ORDER BY 1;
--- Ramen was the most popular item for customers A and C
--- Customer B liked all three menu items equally according to the results. They purchased ramen, curry, and sushi two times each.
+-- Ramen was the most popular item for customers A and C.
+-- Customer B liked all three menu items equally according to the results. They purchased ramen, curry, and sushi twice each.
 
 
 -- 6. Which item was purchased first by the customer after they became a member?
 SELECT *
 FROM dannys_diner.members;
--- According to the members tablee, only customers A and B have officially become members. Let's continue with this information in mind. 
+-- According to the members table, only customers A and B have officially become members. Let's continue with this information in mind. 
 WITH cte AS 
 ( 
 SELECT s.customer_id,
@@ -182,7 +182,7 @@ WHERE c.order_date >= c.join_date
 ORDER BY 1,3;
 
 -- Customer A joined on 01-07-2021 and purchased curry as their first item that same day. 
--- Customer B joined on 01-09-2021 and purchased sushi as their first item as an official member on 01-11-2021
+-- Customer B joined on 01-09-2021 and purchased sushi on 01-11-2021 as their first item as an official member.
 
 -- 7. Which item was purchased just before the customer became a member?
 WITH cte AS 
@@ -205,8 +205,8 @@ INNER JOIN dannys_diner.menu
 ON c.product_id = menu.product_id
 WHERE c.order_date < c.join_date
 ORDER BY 1,3 DESC;
--- Customer A bought both curry and sushi on 01-01-2021 just before becoming a member on 01-07-2021
--- Customer B bought sushi on 01-04-2021 just before becoming a memeber on 01-09-2021
+-- Customer A bought both curry and sushi on 01-01-2021 just before becoming a member on 01-07-2021.
+-- Customer B bought sushi on 01-04-2021 just before becoming a memeber on 01-09-2021.
 
 -- 8. What is the total items and amount spent for each member before they became a member?
 SELECT * 
@@ -231,8 +231,8 @@ FROM full_table
 WHERE order_date < join_date
 GROUP BY 1;
 
--- Customer A spent $25 on 2 items prior to becoming a member on 01-07-2021
--- Customer B spent $40 on 3 items prior to becoming a member on 01-09-2021
+-- Customer A spent $25 on 2 items prior to becoming a member on 01-07-2021.
+-- Customer B spent $40 on 3 items prior to becoming a member on 01-09-2021.
 
 -- 9.  If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 WITH menu_sales AS
@@ -297,8 +297,8 @@ SELECT customer_id,
 FROM jan_rewards_table
 GROUP BY 1;
 
--- Customer A earned a total of 1370 points by the end of January
--- Customer B earned a total of 820 points by the end of January 
+-- Customer A earned a total of 1370 points by the end of January.
+-- Customer B earned a total of 820 points by the end of January.
 
 /* --------------------
    Bonus Questions
