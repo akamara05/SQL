@@ -40,5 +40,12 @@ He has prepared for us an entity relationship diagram of his database design but
 
 All datasets exist within the pizza_runner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
 
+This case study has LOTS of questions - they are broken up by area of focus including:
+* Part A: Pizza Metrics
+* PART B: Runner and Customer Experience
+* PART C: Ingredient Optimisation
+* PART D: Pricing and Ratings
+* PART E: Bonus DML Challenges (DML = Data Manipulation Language)
+
 [Link to case study #2 details](https://8weeksqlchallenge.com/case-study-2/)
 
