@@ -2,7 +2,7 @@
 All SQL coding projects and case studies 
 
 
-## CASE STUDY #1. Danny's Diner
+### CASE STUDY #1. Danny's Diner
 
 ![alt text](dannysdinner.png "Entity Relationship Diagram")
 
@@ -17,7 +17,8 @@ He plans on using these insights to help him decide whether he should expand the
 
 
 
-## CASE STUDY #2. Pizza Runner
+
+### CASE STUDY #2. Pizza Runner
 
 ![alt text](PizzaRunner.png "Entity Relationship")
 
