@@ -16,11 +16,11 @@ He plans on using these insights to help him decide whether he should expand the
 -
 -
 -
--
+
 
 ### CASE STUDY #2. Pizza Runner
 
-![title](SQL_Case_Study/PizzaRunner.png)
+![diagram](Personal_Projects/SQL_Case_Study/PizzaRunner.png)
 
 
 __PROBLEM STATEMENT__
