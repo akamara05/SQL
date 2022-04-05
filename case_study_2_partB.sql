@@ -4,10 +4,9 @@
 USE pizza_runner;
 
 -- 1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
-SELECT 
-	   WEEK(registration_date) AS registration_week,
+SELECT WEEK(registration_date) AS registration_week,
        MIN(DATE(registration_date)) date_start_of_week,
-	   COUNT(DISTINCT runner_id) AS no_of_runners
+       COUNT(DISTINCT runner_id) AS no_of_runners
 FROM runners
 GROUP BY 1;
 
