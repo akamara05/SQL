@@ -20,7 +20,7 @@ He plans on using these insights to help him decide whether he should expand the
 
 ### CASE STUDY #2. Pizza Runner
 
-![diagram](Personal_Projects/SQL_Case_Study/PizzaRunner.png)
+![alt text](PizzaRunner.png "Entity Relationship Diagram")
 
 
 __PROBLEM STATEMENT__
