@@ -17,13 +17,6 @@ He plans on using these insights to help him decide whether he should expand the
 -
 -
 -
--
--
--
--
--
--
--
 
 ### CASE STUDY #2. Pizza Runner
 
