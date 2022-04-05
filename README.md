@@ -13,15 +13,21 @@ Danny wants to use the data to answer a few simple questions about his customers
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL. 
 [Link to case study #1 details](https://8weeksqlchallenge.com/case-study-1/)
 
-
-
-
-
-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 ### CASE STUDY #2. Pizza Runner
 
-![title]("SQL_Case_Study/PizzaRunner.png")
+![title](SQL_Case_Study/PizzaRunner.png)
 
 
 __PROBLEM STATEMENT__
